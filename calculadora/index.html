@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/github.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="fundo">
+      <div id="calculadora">
+        <h1>Calculadora</h1>
+        <form id="calcForm">
+          <input class="field" id="numa" type="number" placeholder="Valor 1" />
+
+          <div class="buttons" id="ops">
+            <button class="btn" id="sum">+</button>
+            <button class="btn" id="subt">-</button>
+            <button class="btn" id="mult">x</button>
+            <button class="btn" id="division">/</button>
+            <button type="reset" class="btn" id="reset">C</button>
+          </div>
+
+          <input class="field" id="numb" type="number" placeholder="Valor 2" />
+        </form>
+
+        <div class="result">
+          <h2>Resultado</h2>
+          <h2 id="output" data-default-value="____________">____________</h2>
+        </div>
+
+        <footer>
+          <p>2022 - Humildemente desenvolvido por Felipe Toniolo.</p>
+          <a href="https://github.com/fmtoniolo" target="_blank">
+            <img src="./img/github.png" alt="github" />
+          </a>
+        </footer>
+      </div>
+    </div>
+    <script src="./scripts/calc.js" type="module"></script>
+  </body>
+</html>
